@@ -48,13 +48,13 @@ print(classification_report(y_test, log_pred))
 rf_model = RandomForestClassifier()
 rf_model.fit(X_train, y_train)
 
-rf_pred = rf_model.predict(X_test)
+log_pred = log_model.predict(X_test)
 
-print("\nRandom Forest Results")
-print("Accuracy:", accuracy_score(y_test, rf_pred))
-print(classification_report(y_test, rf_pred))
+print("\nLogistic Regression Results")
+print("Accuracy:", accuracy_score(y_test, log_pred))
+print(classification_report(y_test, log_pred))
 
-joblib.dump(rf_model, "models/churn_prediction_model.pkl")
+joblib.dump(log_model, "models/churn_prediction_model.pkl")
 joblib.dump(scaler, "models/scaler.pkl")
 
 print("Model Saved Successfully")
