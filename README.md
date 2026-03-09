@@ -110,20 +110,11 @@ Combined engagement and product loyalty metric.
 
 🤖 Machine Learning Model
 
-Two models were implemented:
-
-1️⃣ Logistic Regression
-
-Baseline churn prediction model.
-
-2️⃣ Random Forest (Final Model)
-
-Selected due to higher accuracy and better churn prediction.
+The model implemented is Logistic Regression for churn prediction, selected for its interpretability and compatibility across Python versions.
 
 Model Performance
 Model	Accuracy
 Logistic Regression	81.5%
-Random Forest	86.8%
 🌐 Streamlit Dashboard Features
 
 The interactive dashboard provides:
@@ -140,7 +131,7 @@ Real-Time Churn Prediction Tool
 
 🚀 How To Run Project
 Step 1 — Clone Repository
-git clone https://github.com/your-username/Customer_Retention_Project.git
+git clone https://github.com/chetan0319/Customer_Retention_Project.git
 
 Step 2 — Install Requirements
 pip install -r requirements.txt
@@ -153,6 +144,11 @@ python models/churn_model.py
 
 Step 5 — Run Dashboard
 streamlit run streamlit_app/app.py
+
+🌐 Deployment
+The project is deployed on Streamlit Cloud for easy access.
+
+Live Demo: [Customer Retention Dashboard](https://customer-retention-project.streamlit.app/) (replace with actual URL if available)
 
 💡 Business Insights
 
